@@ -39,7 +39,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
-          bundler: '2.1.4'
+          rubygems: latest
           bundler-cache: true
       - run: bundle exec rake spec
       - run: bundle exec rubocop
